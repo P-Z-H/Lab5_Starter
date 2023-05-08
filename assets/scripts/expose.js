@@ -43,7 +43,9 @@ function init() {
       button.addEventListener("click", (event) => {
         audio.play();
         // add the confetti animation
-        jsConfetti.addConfetti();
+        if (horn.value == "party-horn"){
+          jsConfetti.addConfetti();
+        }
       });
     };
   });
